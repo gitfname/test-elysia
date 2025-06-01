@@ -10,6 +10,8 @@ COPY . .
 
 # RUN bunx drizzle-kit generate
 
+RUN bun build --compile --sourcemap ./src/index.ts --outfile myapp
+
 EXPOSE 3000
 
-CMD ["bun", "run", "src/index.ts"]
+CMD ["./myapp"]
