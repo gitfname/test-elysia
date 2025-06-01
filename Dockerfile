@@ -8,7 +8,7 @@ RUN bun install --production
 
 COPY . .
 
-RUN bunx drizzle-kit generate
+# RUN bunx drizzle-kit generate
 
 EXPOSE 3000
 
